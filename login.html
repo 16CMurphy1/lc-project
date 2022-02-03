@@ -125,6 +125,7 @@ input[type=submit] {
 </div>
 				
 <script>
+var user = document.getElementById("usrname");
 var myInput = document.getElementById("psw");
 var letter = document.getElementById("letter");
 var capital = document.getElementById("capital");
@@ -182,9 +183,22 @@ myInput.onkeyup = function() {
     length.classList.add("invalid");
   }
 }
-  {
-    if (myInput==Cmurphy111)
-  }
+ 
+  
+  
+  
+function myFunction(){
+  var user = document.getElementById("username").value;
+  var myInput = document.getElementById("pass").value;
+
+if(user == "Admin" && myInput == "Password1"){
+            window.location.href="win.html"
+        alert("correct");
+   }else{
+    alert("Incorrect username or password");
+    }
+}
+
 </script>
 
   
