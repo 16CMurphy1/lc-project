@@ -1,9 +1,8 @@
+<!DOCTYPE html> 
+
 <html> 
 
- 
-
-  <body> 
-<html>
+<head> 
 <head>
 <style>
 ul {
@@ -28,7 +27,8 @@ li a {
 
 li a:hover {
   background-color: #111;
-}
+
+
 </style>
 </head>
 <body>
@@ -41,267 +41,357 @@ li a:hover {
 </ul>
 
 </body>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-/* Style all input fields */
-input {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-}
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
 
-/* Style the submit button */
-input[type=submit] {
-  background-color: #04AA6D;
-  color: white;
-}
+<style> 
 
-/* Style the container for inputs */
-.container {
-  background-color: #f1f1f1;
-  padding: 20px;
-}
+/* Style all input fields */ 
 
-/* The message box is shown when the user clicks on the password field */
-#message {
-  display:none;
-  background: #f1f1f1;
-  color: #000;
-  position: relative;
-  padding: 20px;
-  margin-top: 10px;
-}
+input { 
 
-#message p {
-  padding: 10px 35px;
-  font-size: 18px;
-}
+  width: 100%; 
 
-/* Add a green text color and a checkmark when the requirements are right */
-.valid {
-  color: green;
-}
+  padding: 12px; 
 
-.valid:before {
-  position: relative;
-  left: -35px;
-  content: "✔";
-}
+  border: 1px solid #ccc; 
 
-/* Add a red text color and an "x" when the requirements are wrong */
-.invalid {
-  color: red;
-}
+  border-radius: 4px; 
 
-.invalid:before {
-  position: relative;
-  left: -35px;
-  content: "✖";
-}
-</style>
+  box-sizing: border-box; 
 
-<script>
-// When the user clicks on the password field, show the message box
-myInput.onfocus = function() {
-  document.getElementById("message").style.display = "block";
-}
+  margin-top: 6px; 
 
-// When the user clicks outside of the password field, hide the message box
-myInput.onblur = function() {
-  document.getElementById("message").style.display = "none";
-}
+  margin-bottom: 16px; 
 
-// When the user starts to type something inside the password field
-myInput.onkeyup = function() {
-  // Validate lowercase letters
-  var lowerCaseLetters = /[a-z]/g;
-  if(myInput.value.match(lowerCaseLetters)) {  
-    letter.classList.remove("invalid");
-    letter.classList.add("valid");
-  } else {
-    letter.classList.remove("valid");
-    letter.classList.add("invalid");
-  }
-  
-  // Validate capital letters
-  var upperCaseLetters = /[A-Z]/g;
-  if(myInput.value.match(upperCaseLetters)) {  
-    capital.classList.remove("invalid");
-    capital.classList.add("valid");
-  } else {
-    capital.classList.remove("valid");
-    capital.classList.add("invalid");
-  }
-
-  // Validate numbers
-  var numbers = /[0-9]/g;
-  if(myInput.value.match(numbers)) {  
-    number.classList.remove("invalid");
-    number.classList.add("valid");
-  } else {
-    number.classList.remove("valid");
-    number.classList.add("invalid");
-  }
-  
-  // Validate length
-  if(myInput.value.length >= 8) {
-    length.classList.remove("invalid");
-    length.classList.add("valid");
-  } else {
-    length.classList.remove("valid");
-    length.classList.add("invalid");
-  }
-}
- 
-  
-  
-  
-function myFunction(){
-  var user = document.getElementById("username").value;
-  var myInput = document.getElementById("pass").value;
-
-if(user == "Admin" && myInput == "Password1"){
-            location.replace ("win.html")
-        alert("correct");
-   }
-  else{
-    alert("Incorrect username or password");
-    }
-}
-
-</script>
-
-  
-</html>
+} 
 
  
 
-    <h3>Smort Home</h3> 
+/* Style the submit button */ 
 
-    <p>Try to submit.</p> 
+input[type=submit] { 
+
+  background-color: #04AA6D; 
+
+  color: white; 
+
+} 
 
  
 
-    <div class="container"> 
+/* Style the container for inputs */ 
 
-      <!-- 
+.container { 
 
-caused to go to different page, nothing worth on 
+  background-color: #f1f1f1; 
 
-<form action="/action_page.php"> 
+  padding: 20px; 
 
---> 
+} 
 
-      <!--username input box with id code --> 
+ 
 
-<label for="username">Username</label> 
+/* The message box is shown when the user clicks on the password field */ 
 
-<input type="text" id="username" name="username" required> 
+#message { 
 
-<!--password input box with id code --> 
+  display:none; 
 
-<label for="psw">Password</label> 
+  background: #f1f1f1; 
 
-<input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{​​8,}​​" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required> 
+  color: #000; 
 
-<!--big green submit box, goes nowhere but redirects to a blank page --> 
+  position: relative; 
 
-<input type="submit" value="Submit"> 
+  padding: 20px; 
 
-<button onclick="getData()">  
+  margin-top: 10px; 
 
-login 
+} 
 
-</button> 
+ 
+
+#message p { 
+
+  padding: 10px 35px; 
+
+  font-size: 18px; 
+
+} 
+
+ 
+
+/* Add a green text color and a checkmark when the requirements are right */ 
+
+.valid { 
+
+  color: green; 
+
+} 
+
+ 
+
+.valid:before { 
+
+  position: relative; 
+
+  left: -35px; 
+
+  content: "✔"; 
+
+} 
+
+ 
+
+/* Add a red text color and an "x" when the requirements are wrong */ 
+
+.invalid { 
+
+  color: red; 
+
+} 
+
+ 
+
+.invalid:before { 
+
+  position: relative; 
+
+  left: -35px; 
+
+  content: "✖"; 
 
 
+</style> 
+
+</head> 
+
+<body> 
+
+ 
+
+<h3>Profile Login</h3> 
+
+<p>Please login.</p> 
+
+ 
+
+<div class="container"> 
+
+  <form action="/action_page.php"> 
+
+    <label for="username">Username</label> 
+
+    <input type="text" id="username" name="username" required> 
+
+ 
+
+    <label for="psw">Password</label> 
+
+    <input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required> 
+
+     
+
+    <button type="submit" value="Submit" onclick = "getData()"> Submit</button> 
+
+  </form> 
 
 </div> 
 
-<!--message that shows when clicked into password box, is red when not entered, is green when is --> 
+ 
 
 <div id="message"> 
 
-<h3>Password must contain the following:</h3> 
+  <h3>Password must contain the following:</h3> 
 
-<p id="letter" class="invalid">A <b>lowercase</b> letter</p> 
+  <p id="letter" class="invalid">A <b>lowercase</b> letter</p> 
 
-<p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p> 
+  <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p> 
 
-<p id="number" class="invalid">A <b>number</b></p> 
+  <p id="number" class="invalid">A <b>number</b></p> 
 
-<p id="length" class="invalid">Minimum <b>8 characters</b></p> 
+  <p id="length" class="invalid">Minimum <b>8 characters</b></p> 
 
 </div> 
-
- 
-
-
-
-</body> 
-
-</html> 
 
  
 
 <script> 
 
-  function getData() { 
+var myInput = document.getElementById("psw"); 
 
-  
+var letter = document.getElementById("letter"); 
 
-      var passw = "Password1"; 
+var capital = document.getElementById("capital"); 
 
-  
+var number = document.getElementById("number"); 
 
-      var userN = "Admin"; 
+var length = document.getElementById("length"); 
 
-  
-
-      if ((myInput.value.match(passw)) && (userName.value.match(userN))) { // worked with "" also worked with == "JaneDoe" 
-
-  
-
-      alert("You have successfully logged in"); 
-
-  
-
-      location.replace("profile.html"); 
-
-  
-
-      } else {  
-
-  
-
-      alert("Incorrect, please try again"); 
-
-  
-
-      }  
-
-  
-
-      document.getElementById("username").value = ""; 
-
-  
-
-      document.getElementById("psw").value = ""; 
-
-  
-
-      }  
-
-    </script> 
-
-  </head> 
-
-</html> 
+var username = document.getElementById("username"); 
 
  
 
+// When the user clicks on the password field, show the message box 
+
+myInput.onfocus = function() { 
+
+  document.getElementById("message").style.display = "block"; 
+
+} 
+
  
+
+// When the user clicks outside of the password field, hide the message box 
+
+myInput.onblur = function() { 
+
+  document.getElementById("message").style.display = "none"; 
+
+} 
+
+ 
+
+// When the user starts to type something inside the password field 
+
+myInput.onkeyup = function() { 
+
+  // Validate lowercase letters 
+
+  var lowerCaseLetters = /[a-z]/g; 
+
+  if(myInput.value.match(lowerCaseLetters)) {   
+
+    letter.classList.remove("invalid"); 
+
+    letter.classList.add("valid"); 
+
+  } else { 
+
+    letter.classList.remove("valid"); 
+
+    letter.classList.add("invalid"); 
+
+  } 
+
+   
+
+  // Validate capital letters 
+
+  var upperCaseLetters = /[A-Z]/g; 
+
+  if(myInput.value.match(upperCaseLetters)) {   
+
+    capital.classList.remove("invalid"); 
+
+    capital.classList.add("valid"); 
+
+  } else { 
+
+    capital.classList.remove("valid"); 
+
+    capital.classList.add("invalid"); 
+
+  } 
+
+ 
+
+  // Validate numbers 
+
+  var numbers = /[0-9]/g; 
+
+  if(myInput.value.match(numbers)) {   
+
+    number.classList.remove("invalid"); 
+
+    number.classList.add("valid"); 
+
+  } else { 
+
+    number.classList.remove("valid"); 
+
+    number.classList.add("invalid"); 
+
+  } 
+
+   
+
+  // Validate length 
+
+  if(myInput.value.length >= 8) { 
+
+    length.classList.remove("invalid"); 
+
+    length.classList.add("valid"); 
+
+  } else { 
+
+    length.classList.remove("valid"); 
+
+    length.classList.add("invalid"); 
+
+  } 
+
+} 
+
+ 
+
+ function getData() { 
+
+          var passw = /Pass1234/; 
+
+ 
+
+          var userN = "JaneDoe"; 
+
+ 
+
+          if (myInput.value.match(passw) && username.value.match(userN)) { 
+
+             
+
+              // worked with "" also worked with == "JaneDoe" 
+
+ 
+
+              alert("You have successfully logged in"); 
+
+             
+
+        location.replace("profile.html"); 
+
+             
+
+          } else { 
+
+            alert("Incorrect, please try again"); 
+
+          } 
+
+ 
+
+          document.getElementById("username").value = ""; 
+
+ 
+
+          document.getElementById("psw").value = ""; 
+
+
+ } 
+
+</script> 
+<style>
+  
+} 
+  input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+}
+
+  </style>
+ 
+
+  </body>
+  
+    
+  </html>
