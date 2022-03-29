@@ -38,15 +38,15 @@ li a:hover {
 </ul>
   
 </body>
-  <main>
+  
+  
+<script>import { initializeApp } from "firebase/app";</script>
+<main>
   <form>
     <input id="email" type="text" maxlength="100" placeholder="Enter your Email for support." >
     <button type="submit" id="submit-data">Submit Email</button>
     </form>
   </main>
-  
-<script>import { initializeApp } from "firebase/app";</script>
-
 <script>
   const firebaseConfig = {
 
@@ -75,6 +75,15 @@ const app = initializeApp(firebaseConfig);
 
 const analytics = getAnalytics(app);
   </script>
+  <script>
+    const btn = document.querySelector("button"); // Get the button from the page
+// Detect clicks on the button
+if (btn) {
+  btn.onclick = function() {
+    // The JS works in conjunction with the 'dipped' code in style.css
+    btn.classList.toggle("dipped");
+  };
+}</script>
   <script src="https://www.gstatic.com/firebasejs/8.4.0/firebase.js"></script>
   <script src="contact1.js"></script>
   
