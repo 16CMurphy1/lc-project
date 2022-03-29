@@ -44,20 +44,37 @@ li a:hover {
     <button type="submit" id="submit-data">Submit Email</button>
     </form>
   </main>
-  <script>
-  // Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
+  
+<script>import { initializeApp } from "firebase/app";</script>
 
+<script>
+  const firebaseConfig = {
+
+  apiKey: "AIzaSyA0AVnZZm7GUL_KYBTJr0Y5QD6D08sdRT0",
+
+  authDomain: "leaving-cert-project-aa8d6.firebaseapp.com",
+
+  databaseURL: "https://leaving-cert-project-aa8d6-default-rtdb.europe-west1.firebasedatabase.app",
+
+  projectId: "leaving-cert-project-aa8d6",
+
+  storageBucket: "leaving-cert-project-aa8d6.appspot.com",
+
+  messagingSenderId: "563974271435",
+
+  appId: "1:563974271435:web:0f808643a38ca0e2f2c64e",
+
+  measurementId: "G-2SR9C6EWWW"
+
+};
 
 
 // Initialize Firebase
+
 const app = initializeApp(firebaseConfig);
+
 const analytics = getAnalytics(app);
   </script>
-  
   <script src="https://www.gstatic.com/firebasejs/8.4.0/firebase.js"></script>
   <script src="contact1.js"></script>
   

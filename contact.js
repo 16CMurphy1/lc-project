@@ -15,11 +15,7 @@ alert(emailFieldValue)
 emailField.value = '';  // clear the field
 emailField.focus();  // set the focus
 
-// code to save the data to Firebase GOES HERE!
-const data = myDBCxn.push();
-data.set( {email: emailFieldValue
-          });
-}
+
 
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
@@ -35,3 +31,9 @@ const firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 // Retrieve the database handle
 const myDBCxn = firebase.database().ref('/contacts');
+
+// code to save the data to Firebase GOES HERE!
+const data = myDBCxn.push();
+data.set( {email: emailFieldValue
+          });
+}
