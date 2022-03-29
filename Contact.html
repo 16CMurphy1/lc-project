@@ -35,6 +35,15 @@ li a:hover {
   <li><a href="login.html">Login</a></li>
 </ul>
 
+  <form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+  
 </body>
   <script>
   // Import the functions you need from the SDKs you need
@@ -59,4 +68,6 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
   </script>
+  
+  
 </html>

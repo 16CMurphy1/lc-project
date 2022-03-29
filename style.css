@@ -113,6 +113,7 @@ END Glitch hello-app default styles
 body {
   font-family: HK Grotesk;
   background-color: var(--color-bg);
+  background-color: powderblue;
 }
 
 /* Page structure */
@@ -182,3 +183,7 @@ h2 {
 .dipped {
   transform: translateY(5px);
 }
+
+
+  background-color: powderblue;
+
